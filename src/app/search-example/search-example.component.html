@@ -20,6 +20,10 @@
         </ul>
     </ng-template>
 
+    <div *ngIf="!showRestaurantView">
+        Search for restaurants to see additional filter chip listbox example
+    </div>
+
     <div class="mobile-screen" *ngIf="showRestaurantView">
         <div class="filter-bar">
             <ul cdkListbox class="filter-chip-listbox" #filterListbox="cdkListbox"
